@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cumpleaños Carol</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./Assents/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Marcellus&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ade9179d87.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -19,8 +21,12 @@
         <h2>Carol Cardenas</h2>
     </header>
     <section class="musicfra">
-        <div class="song">
-            <img src="./Assents/player.svg" alt="">
+        <div class="reproductor">
+            <div class="song">
+                <img class="pause" src="./Assents/tl.png" alt="">
+                <img class="play" src="./Assents/player.svg" alt="">
+            </div>
+            <input type="range" class="progress" min="0" max="100" value="0">
         </div>
         <div class="frase">
             <p>
@@ -38,9 +44,13 @@
             <div class="punto"></div>
         </div>
         <p class="bogota">Bogotá</p>
-        <div class="count">
-            Aqui va el contador
+
+
+        <div id="count">
         </div>
+
+
+
         <div class="line"></div>
     </section>
     <section class="reception">
@@ -86,6 +96,8 @@
     </section>
     <footer>
     </footer>
+    <script src="./simplyCountdown.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

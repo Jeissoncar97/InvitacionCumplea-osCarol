@@ -32,13 +32,73 @@ header h2 {
 section{
     margin: 0 20px;
 }
-.song{
+.reproductor {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative; /* Añadido */
+}
+.progress input[type="range"]::-webkit-slider-thumb {
+    border: none;
+    -webkit-appearance: none; /* Eliminar la apariencia predeterminada */
+    width: 15px; /* Ancho de la bolita */
+    height: 15px; /* Altura de la bolita */
+    background: #000000; /* Color de fondo de la bolita */
+    border-radius: 5%; /* Forma circular */
+    cursor: pointer; /* Cursor de apuntar */
+}
+/* Estilo para Firefox */
+.progress input[type="range"]::-moz-range-thumb {
+    width: 15px; /* Ancho de la bolita */
+    height: 15px; /* Altura de la bolita */
+    background: #000000; /* Color de fondo de la bolita */
+    border-radius: 5%; /* Forma circular */
+    cursor: pointer; /* Cursor de apuntar */
+}
+
+/* Estilo para Edge e Internet Explorer */
+.progress input[type="range" i]::-ms-thumb {
+    width: 15px; /* Ancho de la bolita */
+    height: 15px; /* Altura de la bolita */
+    background: #000000; /* Color de fondo de la bolita */
+    border-radius: 5%; /* Forma circular */
+    cursor: pointer; /* Cursor de apuntar */
+}
+.song {
     padding-bottom: 20px;
+    position: relative;
+    margin-right: 10px;
 }
-.song img{
-    width: 25px;
+
+.progress {
+    width: 100px;
+    height: 5px;
+    background-color: #d1897b;
+    border-radius: 10px;
+}
+
+/* .song .play y .song .pause no tienen posición absoluta */
+
+.song img {
+    height: 25px;
     cursor: pointer;
+    top: 50%; 
 }
+
+/* Asegúrate de que .play y .pause tengan la misma posición */
+.song .play {
+    display: block;
+    transform: translateY(10px);
+}
+
+.song .pause {
+    display: none;
+    transform: translateY(10px);
+}
+
 .musicfra .frase{
     margin: 0 auto;
     width: 300px;
@@ -202,4 +262,32 @@ footer{
     background-size: cover;
     background-repeat: repeat;
     height: 300px;
+}
+#count{
+    font-family: "Marcellus", sans-serif;
+
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.simply-section{
+    margin: 2px;
+    flex-direction: column;
+}
+.simply-section div{
+    display: flex;
+    flex-direction: column;
+}
+.simply-amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid black;
+}
+.simply-word{
+    margin-top: 5px;
+    font-size: .7rem;
+    color: #727272;
 }
