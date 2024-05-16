@@ -37,6 +37,7 @@ section{
 }
 .song img{
     width: 25px;
+    cursor: pointer;
 }
 .musicfra .frase{
     margin: 0 auto;
@@ -82,7 +83,7 @@ section{
     height: 50px;
 }
 .reception{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .reception img{
     width: 60px;
@@ -96,4 +97,63 @@ section{
 .reception p{
     font-family: "Marcellus", sans-serif;
     font-size: 1.5rem;
+}
+
+.location i{
+    font-size: 1.5rem;
+}
+.location h4{
+    margin: 10px auto;
+    width: 150px;
+    padding-top: 10px;
+    font-family: "Marcellus", sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+.location p{
+    font-family: "Marcellus", sans-serif;
+}
+.map{
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map-btn{
+    font-family: "Marcellus", sans-serif;
+    background-color: #d1897b;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 19px;
+    font-size: 1.2rem;
+}
+.detail .lluvia{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Marcellus", sans-serif;
+    font-size: 1.5rem;
+    height: 20px;
+}
+.detail img{
+    width: 50px;
+}
+.mono-tacon{
+    position: relative;
+    height: 100px;
+}
+.mono-tacon img{
+    position: absolute;
+}
+.tacon{
+    transform: translate(-50px);
+    width: 80px;
+}
+.mono{
+    width: 70px;
+    transform: translate(-15px, 10px);
 }
