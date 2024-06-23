@@ -10,6 +10,7 @@ play.addEventListener('click', () =>{
     play.style.display = "none"
     pause.style.display = "block"
     updateProgressBar();
+    sound.currentTime = 22
 })
 
 pause.addEventListener('click', () =>{
@@ -24,6 +25,7 @@ function updateProgressBar() {
         progress.value = progressValue;
     }, 100);
 }
+
 
 simplyCountdown('#count', {
     year: 2024, // required

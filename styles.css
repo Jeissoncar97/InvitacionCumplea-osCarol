@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    max-width: 420px; 
+    max-width: 700px; 
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    background-color: white;
 }
 header {
     background-image: url(./Assents/header.webp);
@@ -19,7 +21,7 @@ header {
 }
 header h1 {
     font-size: 6rem;
-    color: #d1897b;
+    color: #f4a798;
     font-weight: 100;
     transform: rotate(-5deg);
 }
@@ -29,9 +31,7 @@ header h2 {
     transform: rotate(-5deg);
     font-size: 2rem;
 }
-section{
-    margin: 0 20px;
-}
+
 .reproductor {
     align-items: center;
     justify-content: center;
@@ -41,32 +41,7 @@ section{
     margin: 0 auto;
     position: relative; /* Añadido */
 }
-.progress input[type="range"]::-webkit-slider-thumb {
-    border: none;
-    -webkit-appearance: none; /* Eliminar la apariencia predeterminada */
-    width: 15px; /* Ancho de la bolita */
-    height: 15px; /* Altura de la bolita */
-    background: #000000; /* Color de fondo de la bolita */
-    border-radius: 5%; /* Forma circular */
-    cursor: pointer; /* Cursor de apuntar */
-}
-/* Estilo para Firefox */
-.progress input[type="range"]::-moz-range-thumb {
-    width: 15px; /* Ancho de la bolita */
-    height: 15px; /* Altura de la bolita */
-    background: #000000; /* Color de fondo de la bolita */
-    border-radius: 5%; /* Forma circular */
-    cursor: pointer; /* Cursor de apuntar */
-}
 
-/* Estilo para Edge e Internet Explorer */
-.progress input[type="range" i]::-ms-thumb {
-    width: 15px; /* Ancho de la bolita */
-    height: 15px; /* Altura de la bolita */
-    background: #000000; /* Color de fondo de la bolita */
-    border-radius: 5%; /* Forma circular */
-    cursor: pointer; /* Cursor de apuntar */
-}
 .song {
     padding-bottom: 20px;
     position: relative;
@@ -76,7 +51,7 @@ section{
 .progress {
     width: 100px;
     height: 5px;
-    background-color: #d1897b;
+    background-color: #f4a798;
     border-radius: 10px;
 }
 
@@ -101,9 +76,9 @@ section{
 
 .musicfra .frase{
     margin: 0 auto;
-    width: 300px;
+    width: 330px;
     font-family: "Marcellus", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
 }
 .line{
     margin: 30px auto;
@@ -121,6 +96,10 @@ section{
 .bogota{
     font-family: "Marcellus", sans-serif;
     margin-bottom: 25px;
+}
+.dateCount{
+    position: relative;
+    overflow: hidden;
 }
 .dateCount h2{
     font-family: "Great Vibes", cursive, sans-serif;
@@ -143,7 +122,10 @@ section{
     height: 50px;
 }
 .reception{
+    padding-top: 100px;
     padding-bottom: 30px;
+    margin-top: 50px;
+    overflow: hidden;
 }
 .reception img{
     width: 60px;
@@ -158,7 +140,9 @@ section{
     font-family: "Marcellus", sans-serif;
     font-size: 1.5rem;
 }
-
+.location{
+    position: relative;
+}
 .location i{
     font-size: 1.5rem;
 }
@@ -183,12 +167,16 @@ section{
 }
 .map-btn{
     font-family: "Marcellus", sans-serif;
-    background-color: #d1897b;
+    background-color: #f4a798;
     color: white;
     padding: 10px 10px;
     text-decoration: none;
     border-radius: 19px;
     font-size: 1.2rem;
+}
+.detail{
+    position: relative;
+    overflow: hidden;
 }
 .detail .lluvia{
     padding-top: 30px;
@@ -199,7 +187,7 @@ section{
     font-size: 1.5rem;
     height: 20px;
 }
-.detail img{
+.detail .regalo{
     width: 50px;
 }
 .mono-tacon{
@@ -216,6 +204,9 @@ section{
 .mono{
     width: 70px;
     transform: translate(-15px, 10px);
+}
+.dress-code{
+    position: relative;
 }
 .dress-code h2{
     font-family: "Great Vibes", cursive, sans-serif;
@@ -235,10 +226,7 @@ section{
     font-size: 1.2rem;
     padding-bottom: 30px;
 }
-.form img{
-    width: 100px;
-    transform: rotate(-70deg);
-}
+
 .form h3{
     font-family: "Great Vibes", cursive, sans-serif;
     font-weight: 100;
@@ -290,4 +278,65 @@ footer{
     margin-top: 5px;
     font-size: .7rem;
     color: #727272;
+}
+.cont-img-carol{
+    width: 100%;
+}
+.cont-img-carol img{
+    width: 100%;
+}
+.butterfly1{
+    position: absolute;
+    width: 150px;
+    top: 0px;
+    right: 280px;
+    transform: rotate(10deg);
+}
+.butterfly-cont-two{
+    position: relative;
+}
+.butterfly-cont-two img{
+    width: 120px;
+    position: absolute;
+}
+.butterfly-cont-two .butterfly-one{
+    top: -100px;
+    left: -45px;
+    transform: scalex(-1);
+}
+.butterfly-cont-two .butterfly-two{
+
+    top: -100px;
+    right: -45px;
+}
+.butterfly3{
+    position: absolute;
+    width: 100px;
+    top: 25px;
+    left: 20px;
+    transform: rotate(-44deg)
+}
+.butterfly5{
+    position: absolute;
+    width: 120px;
+    right: -40px;
+    top: 80px;
+    transform: rotate(-10deg);
+}
+.butterfly4{
+    position: absolute;
+    width: 90px;
+    left: -20px;
+    top: 100px;
+    transform: rotate(-45deg);
+}
+.cont-ultimate-butterfly{
+    height: 160px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.cont-ultimate-butterfly img{
+    width: 80px
 }
